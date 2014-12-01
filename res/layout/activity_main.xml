@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@*android:color/white" >
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="HTTP,GET请求"
+            android:textSize="20.0dip" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview"
+            android:gravity="center"
+            android:text="左图为ImageView，右图为继承自ImageView的ImageViewEx的SquareImageView，需要另外开一个子线程来操作。" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/normal_iamgeview"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_launcher" />
+
+            <com.mrfu.http.view.RoundImageView
+                android:id="@+id/square_imageview"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@*android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@*android:color/darker_gray" >
+
+        <TextView
+            android:id="@id/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="HTTP,POST请求"
+            android:textColor="@*android:color/white"
+            android:textSize="20.0dip" />
+
+        <TextView
+            android:id="@+id/post_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview"
+            android:textColor="@*android:color/white" />
+
+        <TextView
+            android:id="@+id/return_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_textview"
+            android:textColor="@*android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>
