@@ -38,11 +38,11 @@ import com.mrfu.http.util.UpdateModel;
 
 public class HttpClientPostRequest implements Runnable {
 
-	public static String url = "http://api.nsjnqc.com/service";
+	public static String url = "http://www.baidu.com";
 //	public static String url = "http://122.225.114.20:28080/service";
-	private static final String kTFCommandKey1 = "78d2204c48baa1c6e30fb3dc7ab61d1e2b414b6ec6f3fc3406566e90657453f6f4d5ea7f7a06a2d2a231f1bbf330445959dd6a0be8963ed5d8176f57992768be";
-	private static final String kTFCommandKey2 = "32cfd07149b91cad149b189db024eb110258af8691f752fa842e42d3b57e43d5712115ec41ee4d0090fb47796bec5b70ba085f6a1723263151f571f6ae2c62ad";
-	private static final String RC4_KEY = "78d2204c48baa1c6e30fb3dc7ab61d1e2b414b6ec6f3fc3406566e90657453f6f4d5ea7f7a06a2d2a231f1bbf330445959dd6a0be8963ed5d8176f57992768be";
+	private static final String kTFCommandKey1 = "aaa";
+	private static final String kTFCommandKey2 = "bbb";
+	private static final String RC4_KEY = "ccc";
 
 	protected static final String BOUNDARY = "--293iosfksdfkiowjksdf31jsiuwq003s02dsaffafass3qw";// ??��???????�线
 

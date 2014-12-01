@@ -9,8 +9,4 @@ public class HttpRequestGet_Path extends HttpRequestGet {
 		this.msgId = msgId;
 		this.targetId = targetId;
 	}
-//	@Override
-//	protected String getFilePath() {
-//		return FileStore.createNewVoiceFile(targetId,msgId);
-//	}
 }
